@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+         <report 
+            id="sales_receipt"
+            model="account.voucher"
+            string="Sales Receipt"
+            report_type="qweb-pdf"
+            name="SalesReceipt_SendByEmail_and_Print_Button_Module.report_sales_receipt"
+            file="SalesReceipt_SendByEmail_and_Print_Button_Module.report_sales_receipt"
+        />
+    </data>
+</openerp>

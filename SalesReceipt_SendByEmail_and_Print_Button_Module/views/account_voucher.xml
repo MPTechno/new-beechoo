@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+        <record model="ir.ui.view" id="account_voucher_inherit_form_view_for_buttons">
+            <field name="name">account.voucher.inherit.form.view.for.buttons</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_sale_receipt_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='proforma_voucher']" position="after">
+                    <button name="action_sales_receipt_sent" type="object" string="Send by Email" class="oe_highlight" groups="base.group_user" attrs="{'invisible': [('state','=','draft')]}"/>
+                    <button name="sales_receipt_print" type="object" string="Print" class="oe_highlight" groups="base.group_user" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp> 
